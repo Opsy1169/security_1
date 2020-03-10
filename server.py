@@ -21,4 +21,4 @@ while 1:
         if len(part) < many_bytes:
             break
     image = Image.open(io.BytesIO(data))
-    image.show()
+    image.save("server/received.png", "PNG")
